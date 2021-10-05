@@ -87,32 +87,32 @@ class volBalok():
             print(Vb, "\n")
 
 
-print("========== No. 1 Penjumlahan ==========")
+print("No. 1 Penjumlahan")
 b = sumBilangan()
 b.jumlah(71, 45, 1, 22)
 b.jumlah(7, 11, 43)
 b.jumlah(10, 21)
 f = b.jumlah(1)
 print(f)
-print("=======================================\n")
+print("\n")
 
 
-print("========= No. 2 Bunga Majemuk =========")
+print("No. 2 Bunga Majemuk")
 bm = bungaMajemuk()
 bm.bunga(1000000, 0.05, 12)
 bm.bunga(2500000, 0.03, 5)
 bm.bunga(2000000, 0.08)
-print("=======================================\n")
+print("\n")
 
-print("======== No. 3 Volume Silinder ========")
+print("No. 3 Volume Silinder")
 vs = volSilinder()
 vs.silinder(3, 7)
 vs.silinder(4)
-print("=======================================\n")
+print("\n")
 
 
-print("========== No. 4 Volume Balok =========")
+print("No. 4 Volume Balok")
 vb = volBalok()
 vb.balok(2, 9, 4)
 vb.balok(5, 6)
-print("=======================================\n")
+print("\n")
