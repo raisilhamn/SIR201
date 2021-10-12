@@ -1,6 +1,5 @@
 # A "Operator Overloading" tersedia di cpp dan python
 import math
-from typing import Pattern
 
 
 class Overloading:
