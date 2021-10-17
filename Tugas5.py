@@ -16,8 +16,8 @@ class Overloading:
 a = Overloading(5)
 b = Overloading(5)
 
-print(a + b)
-print(a - b)
+print("Penjumlahan dengan operator overloading ",a + b)
+print("Pengurangan dengan operator overloading ", a - b)
 
 # B
 # BendaBulat
