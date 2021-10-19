@@ -178,7 +178,7 @@ print("======= Penjumlahan 2 matriks 2D ======= ")
 test2.Penjumlahan2D(test1)
 
 print("======= Pengurangan 2 matriks 2D ======= ")
-test1.Penjumlahan2D(test2)
+test1.Pengurangan2D(test2)
 
 print('=========================== Nomor 3 (array 2D baris tidak sama) =========================== ')
 barisArray = int(input(F'Masukan jumlah baris array : '))
@@ -198,12 +198,12 @@ test5.tampilArray()
 
 
 
-print('=========================== Nomor 3 (Array 3 dimensi) =========================== ')
-print('======= masukan tiap elemen array 1 ========= ')
+print('=========================== Nomor 4 (Array 3 dimensi) =========================== ')
+# print('======= masukan tiap elemen array 1 ========= ')
 array3d = Array3DimSama(3, 3, 3)
 array3d.Matriks()
 
-print('======= masukan tiap elemen array 2 ========= ')
+# print('======= masukan tiap elemen array 2 ========= ')
 array3d2 = Array3DimSama(3, 3, 3)
 array3d2.Matriks()
 
