@@ -1,7 +1,7 @@
 import math
 
 # menampilkan variabel yang dimiliki objek
-def printdir(obj):
+def printVar(obj):
     res = []
     for i in range(len(obj)):
         if not obj[i].startswith("_"):
@@ -33,16 +33,16 @@ vehicle_obj = Vehicle()
 print()
 print("########### SOAL 1 ###########")
 print("Objek car = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(car))}\n")
+print(f"Variabel yang dapat diakses : {printVar(dir(car))}\n")
 
 print("Objek vehicle_obj = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(vehicle_obj))}\n")
+print(f"Variabel yang dapat diakses : {printVar(dir(vehicle_obj))}\n")
 
-vehicle_obj.__class__ = Car
+vehicle_obj.__class__ = Car # downcasting
 car2 = vehicle_obj
 
 print("Objek setelah downcasting = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(car2))}")
+print(f"Variabel yang dapat diakses : {printVar(dir(car2))}")
 
 
 # 2
@@ -73,16 +73,16 @@ vehicle_obj = Vehicle()
 print()
 print("########### SOAL 2 ###########")
 print("Objek car = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(car))}\n")
+print(f"Variabel yang dapat diakses : {printVar(dir(car))}\n")
 
 print("Objek vehicle_obj = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(vehicle_obj))}\n")
+print(f"Variabel yang dapat diakses : {printVar(dir(vehicle_obj))}\n")
 
 vehicle_obj.__class__ = Car  # downcasting
 car2 = vehicle_obj
 
 print("Objek setelah downcasting = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(car2))}")
+print(f"Variabel yang dapat diakses : {printVar(dir(car2))}")
 
 
 # 3
@@ -130,16 +130,16 @@ print()
 print("########### SOAL 3 ###########")
 
 print("Objek tb1 = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(tb1))}\n")
+print(f"Variabel yang dapat diakses : {printVar(dir(tb1))}\n")
 
 print("Objek bb1 = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(bb1))}\n")
+print(f"Variabel yang dapat diakses : {printVar(dir(bb1))}\n")
 
 bb1.__class__ = Tabung  # downcasting
 tb2 = bb1
 
 print("Objek tb2 = ")
-print(f"Variabel setelah downcasting : {printdir(dir(tb2))}")
+print(f"Variabel setelah downcasting : {printVar(dir(tb2))}")
 
 
 class BendaPersegi:
@@ -188,13 +188,13 @@ print()
 print("########### SOAL 4 ###########")
 
 print("Objek tb1 = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(tb1))}\n")
+print(f"Variabel yang dapat diakses : {printVar(dir(tb1))}\n")
 
 print("Method bb1 = ")
-print(f"Variabel yang dapat diakses : {printdir(dir(bb1))}\n")
+print(f"Variabel yang dapat diakses : {printVar(dir(bb1))}\n")
 
 bb1.__class__ = Tabung  # downcasting
 tb2 = bb1
 
 print("Method tb2 = ")
-print(f"Variabel setelah downcasting : {printdir(dir(tb2))}")
+print(f"Variabel setelah downcasting : {printVar(dir(tb2))}")
