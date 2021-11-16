@@ -1,5 +1,6 @@
 import math
 
+
 # menampilkan variabel yang dimiliki objek
 def printVar(obj):
     res = []
@@ -28,20 +29,21 @@ class Car(Vehicle):
 
 
 car = Car()
-vehicle_obj = Vehicle()
 
 print()
 print("########### SOAL 1 ###########")
-print("Objek car = ")
+print("Objek car")
 print(f"Variabel yang dapat diakses : {printVar(dir(car))}\n")
 
-print("Objek vehicle_obj = ")
+car.__class__ = Vehicle
+vehicle_obj = car
+print("Objek setelah upcasting")
 print(f"Variabel yang dapat diakses : {printVar(dir(vehicle_obj))}\n")
 
-vehicle_obj.__class__ = Car # downcasting
+vehicle_obj.__class__ = Car  # downcasting
 car2 = vehicle_obj
 
-print("Objek setelah downcasting = ")
+print("Objek setelah downcasting")
 print(f"Variabel yang dapat diakses : {printVar(dir(car2))}")
 
 
@@ -68,14 +70,15 @@ class Car(Vehicle):
 
 
 car = Car()
-vehicle_obj = Vehicle()
 
 print()
 print("########### SOAL 2 ###########")
 print("Objek car = ")
 print(f"Variabel yang dapat diakses : {printVar(dir(car))}\n")
 
-print("Objek vehicle_obj = ")
+car.__class__ = Vehicle
+vehicle_obj = car
+print("Objek Objek setelah upcasting ")
 print(f"Variabel yang dapat diakses : {printVar(dir(vehicle_obj))}\n")
 
 vehicle_obj.__class__ = Car  # downcasting
@@ -124,7 +127,6 @@ class Tabung(BendaBulat):
 
 
 tb1 = Tabung(3, "Hijau", 4)
-bb1 = BendaBulat(3, "Merah")
 
 print()
 print("########### SOAL 3 ###########")
@@ -132,7 +134,10 @@ print("########### SOAL 3 ###########")
 print("Objek tb1 = ")
 print(f"Variabel yang dapat diakses : {printVar(dir(tb1))}\n")
 
-print("Objek bb1 = ")
+tb1.__class__ = BendaBulat  # upcasting
+bb1 = tb1
+
+print("Objek setelah upcasting")
 print(f"Variabel yang dapat diakses : {printVar(dir(bb1))}\n")
 
 bb1.__class__ = Tabung  # downcasting
@@ -182,7 +187,6 @@ class Balok(BendaPersegi):
 
 
 tb1 = Balok(3, 4, "Merah", 5)
-bb1 = BendaPersegi(3, 1, "Jingga")
 
 print()
 print("########### SOAL 4 ###########")
@@ -190,7 +194,10 @@ print("########### SOAL 4 ###########")
 print("Objek tb1 = ")
 print(f"Variabel yang dapat diakses : {printVar(dir(tb1))}\n")
 
-print("Method bb1 = ")
+tb1.__class__ = BendaBulat  # upcasting
+bb1 = tb1
+
+print("Objek setelah upcasting")
 print(f"Variabel yang dapat diakses : {printVar(dir(bb1))}\n")
 
 bb1.__class__ = Tabung  # downcasting
