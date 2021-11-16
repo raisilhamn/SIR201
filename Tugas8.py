@@ -77,8 +77,9 @@ print("########### SOAL 2 ###########")
 print("Objek car = ")
 print(f"Variabel yang dapat diakses : {printVar(dir(car))}\n")
 
-car.__class__ = Vehicle
+car.__class__ = Vehicle  # upcasting
 vehicle_obj = car
+
 print("Objek Objek setelah upcasting ")
 print(f"Variabel yang dapat diakses : {printVar(dir(vehicle_obj))}\n")
 
